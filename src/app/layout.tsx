@@ -1,21 +1,31 @@
 import type { Metadata, Viewport } from "next";
-import { Cormorant_Garamond, Manrope } from "next/font/google";
+import localFont from "next/font/local";
 import { SharedSvgDefs } from "@/components/Ornaments";
 import "./globals.css";
 
-const cormorant = Cormorant_Garamond({
-  subsets: ["latin"],
-  weight: ["400", "500", "600"],
-  style: ["normal", "italic"],
+/*
+ * Fuentes servidas desde el repositorio (src/app/fonts, licencia OFL).
+ * Son los mismos archivos variables (subset latin) que entregaba Google Fonts.
+ * Con next/font/google, cada build descarga las fuentes de fonts.gstatic.com y, si esa
+ * descarga falla, Turbopack aborta con "Can't resolve '@vercel/turbopack-next/internal/font/google/font'".
+ */
+const cormorant = localFont({
+  src: [
+    { path: "./fonts/cormorant-garamond-latin-var.woff2", weight: "300 700", style: "normal" },
+    { path: "./fonts/cormorant-garamond-latin-italic-var.woff2", weight: "300 700", style: "italic" },
+  ],
   variable: "--font-cormorant",
   display: "swap",
+  adjustFontFallback: "Times New Roman",
 });
 
-const manrope = Manrope({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+const manrope = localFont({
+  src: "./fonts/manrope-latin-var.woff2",
+  weight: "200 800",
+  style: "normal",
   variable: "--font-manrope",
   display: "swap",
+  adjustFontFallback: "Arial",
 });
 
 export const metadata: Metadata = {

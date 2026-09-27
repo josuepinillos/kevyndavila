@@ -177,3 +177,9 @@ python scripts/process_photos.py --force
 ## Contenido
 
 Textos y datos del evento: `src/config/event.ts`.
+
+## Fuentes
+
+Cormorant Garamond y Manrope se sirven desde `src/app/fonts/` con `next/font/local`
+(archivos variables, subset latin, licencia OFL incluida). No se usa `next/font/google`
+para que el build no dependa de descargar fuentes de Google en cada deploy.
