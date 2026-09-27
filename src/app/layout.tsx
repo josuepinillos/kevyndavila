@@ -28,15 +28,34 @@ const manrope = localFont({
   adjustFontFallback: "Arial",
 });
 
+const SITE_URL = "https://kevyndavila.com";
+const TITLE = "Kevyn Dávila · Te invito a mi cumpleaños";
+const SHARE_DESCRIPTION =
+  "Celebremos juntos el cumpleaños de Kevyn Dávila. Revisa todos los detalles de la celebración y confirma tu asistencia.";
+
+/*
+ * La imagen para compartir (og:image / twitter:image, con dimensiones, tipo y alt) la
+ * genera Next.js a partir de src/app/opengraph-image.jpg y src/app/twitter-image.jpg
+ * (ver scripts/og_image.py). metadataBase convierte esas rutas en URLs absolutas.
+ */
 export const metadata: Metadata = {
-  title: "Kevyn Dávila · Te invito a mi cumpleaños",
+  metadataBase: new URL(SITE_URL),
+  title: TITLE,
   description:
     "Sábado 10 de octubre de 2026, 3:00 pm · Villa Doña Martha. Será un placer compartir este momento contigo.",
+  alternates: { canonical: "/" },
   openGraph: {
-    title: "Kevyn Dávila · Te invito a mi cumpleaños",
-    description: "Sábado 10.10.2026 · 3:00 pm · Villa Doña Martha",
+    title: TITLE,
+    description: SHARE_DESCRIPTION,
+    url: "/",
+    siteName: "Kevyn Dávila",
     type: "website",
     locale: "es_ES",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: TITLE,
+    description: SHARE_DESCRIPTION,
   },
 };
 
