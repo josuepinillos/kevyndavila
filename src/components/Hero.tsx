@@ -31,13 +31,6 @@ export function Hero() {
       {/* Rieles editoriales laterales */}
       <p
         aria-hidden="true"
-        className="label intro-text absolute left-5 top-1/2 hidden -translate-y-1/2 -rotate-180 text-gold-400/60 [writing-mode:vertical-rl] md:block"
-        style={i(6)}
-      >
-        Nº 01 — Invitación privada
-      </p>
-      <p
-        aria-hidden="true"
         className="label intro-text absolute right-5 top-1/2 hidden -translate-y-1/2 text-gold-400/60 [writing-mode:vertical-rl] md:block"
         style={i(6)}
       >

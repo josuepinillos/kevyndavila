@@ -28,11 +28,6 @@ export function EventDetails() {
       <div className="mx-auto max-w-5xl lg:grid lg:grid-cols-[1fr_1.1fr] lg:items-center lg:gap-20">
         {/* Fecha como composición tipográfica */}
         <div className="text-center lg:text-left">
-          <p data-reveal className="label flex items-center justify-center gap-3 text-gold-400 lg:justify-start" style={i(0)}>
-            <span className="text-gold-400/60">03</span>
-            <span className="h-px w-6 bg-gold-400/50" />
-            Detalles
-          </p>
           <h2 id="detalles-title" className="sr-only">
             Detalles del evento
           </h2>

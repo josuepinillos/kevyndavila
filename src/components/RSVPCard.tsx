@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useId, useRef, useState, type CSSProperties, type FormEvent } from "react";
+import { useEffect, useId, useRef, useState, type FormEvent } from "react";
 import { confirmAttendance } from "@/app/actions/rsvp";
 import { MESSAGES } from "@/lib/rsvp/service";
 import { NAME_MAX, firstNameOf, validateName } from "@/lib/rsvp/name";
@@ -8,8 +8,6 @@ import { AnimatedSection } from "./AnimatedSection";
 import { FrameCorners, Sparkle } from "./Ornaments";
 
 type Status = "idle" | "sending" | "done";
-
-const i = (n: number) => ({ "--i": n }) as CSSProperties;
 
 /**
  * RSVP real: el formulario llama a la Server Action `confirmAttendance`
@@ -98,11 +96,6 @@ export function RSVPCard() {
         />
 
         <div className="relative text-center">
-          <p className="label flex items-center justify-center gap-3 text-gold-400" style={i(0)}>
-            <span className="text-gold-400/60">05</span>
-            <span className="h-px w-6 bg-gold-400/50" />
-            RSVP
-          </p>
           <h2
             id="rsvp-title"
             className="gold-text mx-auto mt-6 font-serif text-[2.25rem] font-medium uppercase leading-[0.98] tracking-[0.04em] sm:text-5xl"

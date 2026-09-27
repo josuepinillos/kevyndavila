@@ -19,12 +19,6 @@ export function Experience() {
         {event.day}
       </span>
 
-      <p data-reveal className="label flex items-center justify-center gap-3 text-gold-400" style={{ "--i": 0 } as CSSProperties}>
-        <span className="text-gold-400/60">02</span>
-        <span className="h-px w-6 bg-gold-400/50" />
-        La celebración
-      </p>
-
       <blockquote className="mx-auto mt-10 max-w-[18ch] font-serif text-[2.35rem] font-normal italic leading-[1.12] text-cream sm:max-w-[20ch] sm:text-6xl">
         <Words text={event.experience} />
       </blockquote>
@@ -33,7 +27,7 @@ export function Experience() {
 
       <div data-reveal className="mt-14" style={{ "--i": 4 } as CSSProperties}>
         <p className="label mb-7 flex items-center justify-center gap-2 text-[0.625rem] text-gold-300/80">
-          <Sparkle size={9} /> La cuenta regresiva <Sparkle size={9} />
+          <Sparkle size={9} /> Cuenta regresiva <Sparkle size={9} />
         </p>
         <Countdown />
       </div>

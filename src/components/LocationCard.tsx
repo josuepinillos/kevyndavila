@@ -64,11 +64,6 @@ export function LocationCard() {
         </div>
 
         <div className="px-6 py-10 text-center sm:px-10 lg:flex lg:flex-col lg:justify-center lg:py-16 lg:text-left">
-          <p data-reveal style={i(0)} className="label flex items-center justify-center gap-3 text-gold-400 lg:justify-start">
-            <span className="text-gold-400/60">04</span>
-            <span className="h-px w-6 bg-gold-400/50" />
-            Ubicación
-          </p>
           <h2
             id="ubicacion-title"
             data-reveal
