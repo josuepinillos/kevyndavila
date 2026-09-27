@@ -55,19 +55,19 @@ export function Hero() {
           id="hero-title"
           className="intro-name relative z-10 -mt-[29%] text-center font-serif font-medium uppercase leading-[0.84] tracking-[0.045em] sm:-mt-[22%] lg:col-start-1 lg:mt-8 lg:text-left"
         >
-          <span className="block overflow-hidden pb-[0.06em]">
+          <span className="block overflow-hidden pb-[0.06em] lg:overflow-x-visible lg:overflow-y-clip">
             <GoldText
               shimmer
-              className="text-[clamp(4rem,20vw,6.75rem)] lg:text-[clamp(5.5rem,8.6vw,8.75rem)]"
+              className="text-[clamp(4rem,20vw,6.75rem)] lg:text-[clamp(5.5rem,8.6vw,7.75rem)]"
               style={i(0)}
             >
               {event.firstName}
             </GoldText>
           </span>
-          <span className="block overflow-hidden pb-[0.08em]">
+          <span className="block overflow-hidden pb-[0.08em] lg:overflow-x-visible lg:overflow-y-clip">
             <GoldText
               shimmer
-              className="text-[clamp(4rem,20vw,6.75rem)] lg:ml-[0.55em] lg:text-[clamp(5.5rem,8.6vw,8.75rem)]"
+              className="text-[clamp(4rem,20vw,6.75rem)] lg:ml-[0.55em] lg:text-[clamp(5.5rem,8.6vw,7.75rem)]"
               style={i(1)}
             >
               {event.lastName}
