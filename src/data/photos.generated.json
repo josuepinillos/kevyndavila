@@ -1,0 +1,71 @@
+[
+  {
+    "id": "kevyn-01",
+    "source": "assets/foto_02.jpeg",
+    "cutout": "assets/processed/foto_02-cutout.png",
+    "variants": [
+      {
+        "src": "/images/kevyn-01-480.webp",
+        "width": 480,
+        "height": 600
+      },
+      {
+        "src": "/images/kevyn-01-800.webp",
+        "width": 800,
+        "height": 1000
+      },
+      {
+        "src": "/images/kevyn-01-1200.webp",
+        "width": 1200,
+        "height": 1500
+      }
+    ],
+    "scale": 0.6702
+  },
+  {
+    "id": "kevyn-02",
+    "source": "assets/foto_01.HEIC",
+    "cutout": "assets/processed/foto_01-cutout.png",
+    "variants": [
+      {
+        "src": "/images/kevyn-02-480.webp",
+        "width": 480,
+        "height": 600
+      },
+      {
+        "src": "/images/kevyn-02-800.webp",
+        "width": 800,
+        "height": 1000
+      },
+      {
+        "src": "/images/kevyn-02-1200.webp",
+        "width": 1200,
+        "height": 1500
+      }
+    ],
+    "scale": 0.5507
+  },
+  {
+    "id": "kevyn-03",
+    "source": "assets/foto_03.HEIC",
+    "cutout": "assets/processed/foto_03-cutout.png",
+    "variants": [
+      {
+        "src": "/images/kevyn-03-480.webp",
+        "width": 480,
+        "height": 600
+      },
+      {
+        "src": "/images/kevyn-03-800.webp",
+        "width": 800,
+        "height": 1000
+      },
+      {
+        "src": "/images/kevyn-03-1200.webp",
+        "width": 1200,
+        "height": 1500
+      }
+    ],
+    "scale": 0.5087
+  }
+]
